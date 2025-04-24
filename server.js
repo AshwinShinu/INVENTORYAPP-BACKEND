@@ -37,7 +37,7 @@ async function run() {
 }
 run().catch(console.dir);
 // Database Connection
-mongoose.connect('mongodb+srv://stanlykurian:stanlykurian@cluster0.txphiw3.mongodb.net/DemoApp', {
+mongoose.connect('mongodb+srv://ashwinshinu:ashwinshinu@cluster0.yhzhn.mongodb.net/inventory', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
