@@ -25,7 +25,7 @@ const RoomModel = mongoose.model("Room", RoomSchema, "Room");
 const PanCardModel = mongoose.model("PanCard", PanCardSchema, "PanCard");
 
 // Database Connection
-mongoose.connect('mongodb+srv://stanlykurian:stanlykurian@cluster0.txphiw3.mongodb.net/DemoApp', {
+mongoose.connect('mongodb+srv://ashwinshinu:ashwinshinu@cluster0.yhzhn.mongodb.net/inventory', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
