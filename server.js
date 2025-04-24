@@ -14,7 +14,7 @@ app.use(express.json());
 // Database Connection
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://ashwinshinu:ashwinshinu@cluster0.yhzhn.mongodb.net/inventory";
+const uri = "mongodb+srv://ashwinshinu:ashwin@cluster0.mongodb.net/inventory?retryWrites=true&w=majority";
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
@@ -37,7 +37,7 @@ async function run() {
 }
 run().catch(console.dir);
 // Database Connection
-mongoose.connect('mongodb+srv://ashwinshinu:ashwinshinu@cluster0.yhzhn.mongodb.net/inventory', {
+mongoose.connect('mongodb+srv://ashwinshinu:ashwin@cluster0.mongodb.net/inventory?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
